@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes</title>
+    <style>
+        div.login-camp {
+            display: flex;
+            background-color: #dc143cdc;
+            height: 150px;
+            padding: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        div.email {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            text-align: left;
+            font: normal bolder 1em Arial, Helvetica, sans-serif;
+        }
+        div.senha {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            text-align: left;
+            font: normal bolder 1em Arial, Helvetica, sans-serif;
+        }
+        div.check {
+            display: flex;
+            flex-direction: row;
+            margin-left: -45px;
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-camp">
+        <div class="email">
+            <label for="email">Email:</label>
+            <input required type="email" name="email" id="email" autocomplete="email">
+        </div>
+        <div class="senha">
+            <label for="senha">Senha:</label>
+            <input required minlength="8" type="password" name="senha" id="senha" autocomplete="current-password">
+        </div>
+        <div class="check">
+            <input type="checkbox" name="check" id="check" autocomplete="email">
+            <label for="check">mater conectado</label>
+
+        </div>
+    </div>
+</body>
+</html>

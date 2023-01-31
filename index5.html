@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        div {
+            background-color: lightgray;
+            width: 150px;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            font: normal bolder 0.9em Arial;
+            margin-bottom: 10px;
+        }
+        #coment, #coment:hover {
+            border: 0 solid transparent;
+            outline: 0;
+            font: normal normal 1em Arial ;
+        }
+        #color {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="color">Escolha uma cor</label>
+        <img src="background-preto-p.jpg" alt="" id="imagem">
+        <select name="cores" id="color">
+                <option value="preto" >Preto</option>
+                <option value="azul">Azul</option>
+                <option value="laranja" selected>Laranja</option>
+        </select>
+        <input type="button" id="botao" value="Enviar">
+        <p></p>
+        <p></p>
+    </div>
+    <script>
+        var img = document.querySelector('#imagem')
+        var res = document.getElementsByTagName('p')[0]
+        var res_2 =document.getElementsByTagName('p')[1]
+        var botao = document.querySelector('#botao')
+        var cor = document.querySelector('#color')
+        botao.addEventListener('click',enviar)
+        function enviar() {
+            switch (cor.value) {
+                case 'preto':
+                    img.setAttribute('src','perfil-github.jpeg')
+                    res.style.width = '20px'
+                    res.style.height = '20px'
+                    res.style.background = 'black'
+                    res_2.innerText = ' #000000'
+                    res_2.style.margin = '-32px 0 0 -30px'
+                    break;
+                case 'azul':
+                    res.style.width = '20px'
+                    res.style.height = '20px'
+                    res.style.background = 'blue'
+                    break;
+                case 'laranja' :    
+                    res.style.width = '20px'
+                    res.style.height = '20px'
+                    res.style.background = 'orange'
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

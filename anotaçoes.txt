@@ -1,0 +1,13 @@
+ criar um programa que mostra as materias de cada dia da semana
+ 1-nome do aluno, dia da semana
+ 2- armazenar os dias da semana ,e mostrar quais materias terao no dia.
+ 3- é preciso inserir um dia da semana pra retornar as materias
+ 4-que ao inserir o dia da semana o programaq mostre as materias daquele dia
+ 5-
+ input nome = algum nome
+ input diaSem =  dia da semana
+ print('Olá vincius, seja bem vindo!)
+ switch(diaSem)
+ case segunda
+ print(materias da segunda)
+ ....continua ate finalizar

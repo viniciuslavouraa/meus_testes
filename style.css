@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+section {
+    position: absolute;
+    display: block;
+    background-color: lightcoral;
+    width: 300px;
+    height: 255px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+label {
+    background-color: rgba(255, 255, 255, 0.247);
+    display: block;
+    font: normal bolder 1em Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+input#animal {
+    background-color: lightgray;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #00000081;
+    border-radius: 10px;
+    outline: 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 1px solid beige;
+    cursor: pointer;
+}
+button:active, button:hover {
+    border: 2px solid #00000094;
+}
+
+ul {
+    background-color: #f08080;
+    display: block;
+    height: 60px;
+    width: 150px;
+    list-style: none;
+    list-style-position: inside;
+    padding: 0 10px;
+    margin: 10px auto 0 auto;
+}
+
+a {
+    color: white;
+    padding: 5px;
+    font: normal bolder 0.9em Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+a:hover {
+    background-color: #7788998a;
+    padding: 2px 5px;
+    border-radius: 15px;
+    text-decoration: underline;
+}

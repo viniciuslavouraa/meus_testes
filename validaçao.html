@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+    <style>
+        div.conteudo {
+            background-color: #ff8c00c5;
+            padding: 20px;
+            margin: 100px auto;
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .formulario {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            padding: 10px;
+            font: normal bold 1em Arial, Helvetica, sans-serif;
+        }
+        /* configuraçoes de email */
+        .email {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+        }
+        input#email:focus, #email:focus:required {
+            padding: 5px;
+            border: 1px solid black;
+            outline: 0;
+        }
+        #email:focus:valid {
+            border: 1px solid green;
+        }
+        /* configuraçoes da senha */
+        .senha {
+            display: flex;
+            flex-direction: column;
+        }
+        input#senha:focus, #senha:focus:required {
+            border: 1px solid black;
+            outline: 0;
+            padding: 5px;
+        }
+        #senha:focus:valid {
+            border: 1px solid green;
+        }
+        #minimo-letras {
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        button {
+            background-color: white;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button:hover {
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        <form >
+            <div class="formulario">
+                <div class="email">
+                    <label for="email">Email (Nescessário)</label>
+                    <input required type="email" autocomplete="email"  name="email" id="email">
+                </div>
+                <div class="senha">
+                    <label for="senha">Senha (Nescessário)</label>
+                    <input required minlength="8" type="password" name="senha" id="senha" aria-describedby="minimo-letras">
+                    <div id="minimo-letras"></div>
+                </div>
+                <button id="botao">Entrar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        var senha = document.querySelector('#senha')
+        var res = document.querySelector('#minimo-letras')
+        var botao = document.querySelector('#botao')
+        botao.addEventListener('click', entrar)
+        function entrar () {
+            if (senha.length > 8) {
+            } else {
+            }
+        }
+    </script>
+</body>
+</html>

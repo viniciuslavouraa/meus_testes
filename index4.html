@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #formulario {
+            padding: 20px;
+            text-align: center;
+            background-image: linear-gradient(to bottom, blue, lightblue);
+        }
+        form {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Materias da semana</h1>
+    <div id="formulario">
+        <form action="">
+            <label for="">Qual dia deseja consultar ?</label>
+            <input type="text" id="dia-semana">
+            <input type="button" value="Consultar" id="botao">
+        </form>
+    </div>
+    <script>
+        var form = document.querySelector('#formulario')
+        var  diaSem = document.querySelector('#dia-semana')
+        var botao = document.querySelector('#botao')
+        botao.addEventListener('click',consulta)
+        form.addEventListener('mouseenter',entrar)
+        form.addEventListener('mouseleave', sair)
+        function consulta() {
+            switch (diaSem.value) {
+                case 'segunda':
+                    form.innerHTML += `<p>As matérias de segunda-feira serão: <br> 
+                    Matemática, Fisica, Portugues</p>`
+                    break;
+                case 'terça':
+                    form.innerHTML += `<p> As matérias de Terça-Feira serão: <br>
+                    Filosofia, Biologia, Educação Física<p>`
+                    break;
+                case 'quarta': 
+                form.innerHTML += `<p>As matérias de Quarta-feira serão: <br>
+                Geografia, Lingua Inglesa, Quimica`
+                break;
+                case 'quinta' :
+                    form.innerHTML += `<p>As matérias de Quinta-Feira serão: <br>
+                    Historia,Artes, Biologia`
+                    break;
+                case 'sexta' :
+                    form.innerHTML += `<p>As matérias de Sexta-Feira serão: <br>
+                    Lingua Portuguesa, Sociologia,matematica`
+                    break;
+                default:
+                    form.innerHTML += `[ERRO]digite um dia valido`
+                    break;
+            }
+        }
+        function entrar() {
+            form.style.width = 'auto'
+            form.style.height = '350px'
+            form.style.margin = 'auto'
+        }
+        function sair() {
+            form.style.margin = 'auto'
+            form.style.width = 'auto'
+            form.style.height = '90px'
+
+        }
+    </script>
+</body>
+</html>
