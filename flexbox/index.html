@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .imagem {
+            display: flex;
+            width: 400px;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid black;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+        #tamanho {
+            display: flex;
+            width: 150px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        #caixa_botao {
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+
+    <div class="imagem">
+        <img src="" alt="">
+        <form method="post">
+            <div id="tamanho">
+                <label for="tam">Escolha um tamanho: </label>
+                <select name="tam" id="tam">
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                </select>
+            </div>
+            <div id="caixa_botao">
+                <input type="submit" value="Comprar" id="botao">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
