@@ -11,8 +11,6 @@
         }
         .imagem {
             display: flex;
-            width: 400px;
-            height: 300px;
             padding: 15px;
             border: 1px solid black;
             flex-direction: row;
@@ -24,29 +22,28 @@
             height: 150px;
             border: 1px solid black;
         }
+        #preço {
+            display: flex;
+
+        }
         #tamanho {
             display: flex;
-            width: 150px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            margin-left: 10px;
-            align-items: flex-start;
+            margin-bottom: 10px;
             flex-direction: column;
+            align-items: flex-start;
         }
         #caixa_botao {
             display: flex;
-            flex-direction: row;
-            margin-left: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Titulo</h1>
-
     <div class="imagem">
         <img src="" alt="">
         <form method="post">
             <div id="tamanho">
+                <p id="preço">R$ 1500,200.50</p>
                 <label for="tam">Escolha um tamanho: </label>
                 <select name="tam" id="tam">
                     <option value="p">P</option>
