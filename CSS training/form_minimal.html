@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preenchimento automático</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 400px;
+            height: 300px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        #login_box {
+            display: flex;
+            flex-direction: row;
+        }
+        label {
+            font-size: 0.9em;
+            font-variant: small-caps;
+            margin-left: 20px;
+        }
+        #name, #email, #msg {
+            outline: 0;
+            border: 0 solid transparent;
+            border-bottom: 1px solid rgb(128, 128, 128);
+            padding: 5px ;
+            margin-bottom: 10px;
+            
+        }
+        #name:focus, #email:focus, #msg:focus {
+            position: relative;
+            top: -5px;
+            border-bottom: 1px solid black;
+        }
+        #msg {
+            margin-left: 20px;
+            resize: none;
+            
+        }
+        #button_box {
+            display: flex;
+            margin-right: 3px;
+            justify-content: flex-end;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-variant: small-caps;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div id="login_box">
+            <div id="name_box">
+                <label for="name"></label>
+                <input autocomplete="off" required type="text" placeholder="Name" name="name" id="name" >
+            </div>
+            <div id="email_box">
+                <label for="email"></label>
+                <input autocomplete="off" required type="email" placeholder="E-mail" name="email" id="email">
+            </div>
+        </div>
+        <textarea name="msg" id="msg" cols="50" rows="5" placeholder="Mensagem"></textarea>
+        <div id="button_box">
+            <button>Send Message</button>
+        </div>
+    </form>
+</body>
+</html>

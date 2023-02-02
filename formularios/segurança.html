@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+        }
+        #caixa_login {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #nome, #senha {
+            outline: 0;
+        }
+        #nome:focus, #senha:focus {
+            padding: 4px;
+            border: 1px solid black;
+            box-shadow: 2px 3px 2px #00000071;
+        }
+        #nome:focus:valid, #senha:focus:valid {
+            border: 1.8px solid green;
+            background-color: rgb(132, 255, 132);
+        }
+        .validaçao {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <form >
+            <!-- input fake para pegar bots-->
+            <label aria-hidden="true" hidden class="honeypoot" for="honeypoot">dsfdsf
+            </label>
+            <input aria-hidden="true" hidden type="text" name="honeypoot" id="honeypoot">
+            <!-------------------------------->
+            <div id="caixa_login">
+                <label for="nome">Nome Completo :</label>
+                <input required type="text" name="nome" id="nome" minlength="5" autocomplete="name" aria-describedby="validaçao">
+                <span id="validaçao_nome" class="validaçao">Minimo de 5 letras</span>
+                <label for="senha">Senha:</label>
+                <input required type="password" name="senha" id="senha" minlength="8" autocomplete="new-password" aria-describedby="validaçao">
+                <span id="validaçao_senha" class="validaçao">Minimo 8 letras</span>
+                <button id="botao">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        var botao = document.querySelector ('#botao')
+        botao.addEventListener ('click', entrar)
+        function entrar () {
+            var nome = document.querySelector ('#nome')
+            var validado = document.querySelector ('#validaçao_nome')
+            if (nome.value.length > 5) {
+                validado.innerHTML = 'Caracteres exatos'
+            }else if (nome.value.length < 5) {
+                validado.innerHTML = 'Faltam caracteres'
+            }
+        }
+    </script>
+</html>

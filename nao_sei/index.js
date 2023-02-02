@@ -1,6 +1,5 @@
-var senha = "12345678";
-if(senha.length == 8){
- console.log('sucesso');
-} else {
- console.log('erro');
+var numero = 10
+
+if (numero == 10) {
+    console.log ('legal')
 }
