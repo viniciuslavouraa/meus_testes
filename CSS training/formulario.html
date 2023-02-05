@@ -5,38 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Satisfação</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Título</h1>
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Contato</a>
-            </li>
-            <li>
-                <a href="#">Sobre</a>
-            </li>
-        </ul>
+        <a href="#">Home</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre</a>
     </nav>
     <main>
         <section>
             <form>
-                <div class="newsletter">
-                    <h2>Newsletter</h2>
-                    <label for="email"></label>
-                    <input autocomplete="email" required type="email" name="email" id="email">
-                </div>
-                <div class="botao">
-                    <input type="button" value="Enviar" id="botao">
-                </div>
+                <label for="check">
+                    <input type="checkbox" name="check" id="check">
+                    <div class="container-form">
+                        <div class="newsletter">
+                            <label for="email">Newsletter</label>
+                            <input autocomplete="email" required type="email" name="email" id="email">
+                        </div>
+                        <div class="botao">
+                            <button>Enviar</button>
+                        </div>
+                        <span id="seta"> ▶</span>
+                    </div>
+                </label>
             </form>
-            <aside>
-                <img src="" alt="teste">
+            <!--Continuar login-box-->
+            <aside class="login-box">
+                <form action="#">
+                    <label for="user">Nome de Usuário: </label>
+                    <input type="text" name="user" id="user">
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" aria-describedby="salvar-senha"> <br>
+                    <span id="salvar-senha" class="salvar-senha">
+                        <input type="checkbox" name="" id="">
+                        <label for="save">Salva senha</label>
+                    </span>
+                </form>
             </aside>
         </section>
     </main>
