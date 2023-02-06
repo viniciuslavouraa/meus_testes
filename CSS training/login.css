@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;  
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: transparent url(images/minimal.jpg) no-repeat center right scroll;
+    background-size: cover;
+}
+
+
+@media (max-width: 2500px) {
+    /* Configuração da sessão de login*/
+    section {
+        z-index: 2;
+        position: absolute;
+        background-color: #ffffff;
+        width: 400px;
+        height: 200px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 8px 1px 5px #0000004d;
+    }
+    div#login-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #login-box > h2 {
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+    label {
+        margin-bottom: 5px;
+    }
+    /* Configurações do email*/
+    div#email-box {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    input#email {
+        margin-bottom: 25px;
+    }
+    /* Configurações da senha*/
+    div#senha-box {
+        display: flex;
+        flex-direction: column;
+    }
+    input#senha {
+        margin-bottom: 15px;
+    }
+    input#senha:focus > label {
+        border-bottom: 1px solid black;
+    }
+    div span#recuperar-senha, #recuperar-senha > a{
+        color: black;
+        margin-bottom: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+    #recuperar-senha > a:hover {
+        text-decoration: underline;
+    }
+    /* Configurações button*/
+    div#botao-box {
+        display: flex;
+        width: 442px;
+        margin-left: -20px;
+        justify-content: center;
+    }
+    #login, #registrar {
+        background-color: #ffffff5e;
+        width: 500px;
+        padding: 15px;
+        font-size: .95em;
+        border: 1px solid #0000003a;
+        cursor: pointer;
+    }
+    #login:hover, #registrar:hover {
+        position: relative;
+        z-index: 3;
+        border: 1px solid #47474796;
+        box-shadow: 5px 5px 5px #00000067;
+    }
+    #login {
+        border-right:0 solid transparent ;
+    }
+    #registrar {
+        border-left: 0 solid transparent;
+    }
+    /* Configurações da senha  email */
+    input#email, input#senha {
+        width: 400px;
+        border-top: 0 solid transparent;
+        border-left: 0 solid transparent ;
+        border-right: 0 solid transparent;
+        border-bottom: 1px solid #00000069;
+        outline: 0;
+    }
+    input#email:focus, input#senha:focus {
+        border-bottom: 1px solid black;
+        transition:  .8s;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Configuração da sessão de login*/
+    section {
+        position: absolute;
+        width: 280px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    input#email, input#senha {
+        width: 280px;
+    }
+    /* Configurações button*/
+    div#botao-box {
+        display: flex;
+        width: 321px;
+        margin-left: -20px;
+        justify-content: center;
+    }
+}
