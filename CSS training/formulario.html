@@ -33,20 +33,28 @@
                     </div>
                 </label>
             </form>
-            <!--Continuar login-box-->
-            <aside class="login-box">
-                <form action="#">
-                    <label for="user">Nome de Usuário: </label>
-                    <input type="text" name="user" id="user">
-                    <label for="senha">Senha: </label>
-                    <input type="password" name="senha" id="senha" aria-describedby="salvar-senha"> <br>
-                    <span id="salvar-senha" class="salvar-senha">
-                        <input type="checkbox" name="" id="">
-                        <label for="save">Salva senha</label>
-                    </span>
-                </form>
-            </aside>
         </section>
+        <!--Continuar login-box-->
+        <form action="#" id="login-box">
+            <div id="user-box">
+                <label for="user">Usuário: </label>
+                <input type="text" name="user" id="user">
+            </div>
+            <div id="senha-box">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" aria-describedby="salvar-senha">
+                <span id="salvar-senha" class="salvar-senha">
+                    <input type="checkbox" name="save" id="save">
+                    <label for="save">Salvar senha</label>
+                </span>
+                <span id="recuperar-senha">
+                    <a href="#">Esqueci minha senha</a> 
+                </span>
+            </div>
+            <div id="botao-box">
+                <button>Login</button>
+            </div>
+        </form>
     </main>
 </body>
 </html>
