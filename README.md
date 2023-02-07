@@ -1,3 +1,19 @@
 # meus_testes
 alguns testes de atributos, elementos ou scripts
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
     <a href="https://viniciuslavouraa.github.io/meus_testes/CSS%20training/login_minimalista/login.html" target="_blank">Login Minimalista</a>
+</body>
+</html>
