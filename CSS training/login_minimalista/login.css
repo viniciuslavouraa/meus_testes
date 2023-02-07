@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background: transparent url(images/minimal.jpg) no-repeat center right scroll;
+    background: transparent url(minimal.jpg) no-repeat center right scroll;
     background-size: cover;
 }
 
