@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <!--Seção de Login-->
     <section>
         <form action="#" autocomplete="off">
             <div id="login-box">
@@ -25,8 +26,29 @@
                 </div>
             </div>
             <div id="botao-box">
-                <button id="login">Login</button>
-                <button id="registrar">Resgistrar</button>
+                <input type="button" value="Login" id="login">
+                <input type="button" value="Resgistrar" id="registrar">
+            </div>
+        </form>
+    </section>
+    <!--Seção de registro-->
+    <section class="registro">
+        <form action="#" autocomplete="off">
+            <div id="registro-box" >
+                <h2>Registrar-se</h2>
+                <div id="email-box">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div id="senha-box">
+                    <label for="senha">Senha</label>
+                    <input autocomplete="current-password" minlength="8" required   type="password" name="senha" id="senha">
+                    <label for="senha">Confirme a senha</label>
+                    <input autocomplete="current-password" minlength="8" required  type="password" name="senha" id="senha" class="conf-senha">
+                </div>
+                <div id="botao-box">
+                    <input type="submit" value="Registrar" id="registrar" class="register">
+                </div>
             </div>
         </form>
     </section>

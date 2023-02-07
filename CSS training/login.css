@@ -110,6 +110,16 @@ body {
         border-bottom: 1px solid black;
         transition:  .8s;
     }
+    /* Configurações de registro*/
+    section.registro {
+        display: none;
+        height: 212px;
+    }
+    div#registro-box > h2 {
+        font-weight: normal;
+        padding-bottom: 5px;
+    }
+
 }
 
 @media (max-width: 600px) {
