@@ -1,5 +1,5 @@
 # meus_testes
-alguns testes de atributos, elementos ou scripts
+Alguns mini projetos para estudo, fique a vontade para olhar o código :)
 <div>
 <a href="https://viniciuslavouraa.github.io/meus_testes/CSS%20training/login_minimalista/login.html" target="_blank">Login Minimalista</a>
 </div>
