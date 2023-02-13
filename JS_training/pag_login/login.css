@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes cor {
+    0% {
+        border-color: #fc14278a;
+    }
+    25% {
+        border-color: #e61f9381;
+
+    }
+    50% {
+        border-color: #f014fc70;
+        border-radius: 15px;
+    }
+    100% {
+        border-color: #ab13f27e;
+        border-radius: 15px;
+    }
+}
+
+body {
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#login_tittle {
+    z-index: 1;
+    display: flex;
+    background-color: #ffffff;
+    width: 270px;
+    height: 200px;
+    padding: 15px;
+    margin: auto;
+    gap: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    transition: all 3s;
+}
+#login_tittle  h1 {
+     font-size: 2.8em;
+}
+#login_tittle p {
+    color: #a1a1a1;
+    display: inline-block;
+    width: 197px;
+    text-align: justify;
+}
+
+div#login_box {
+    z-index: 2;
+    display: flex;
+    background-color: transparent;
+    width: 220px;
+    height: 230px;
+    padding: 20px;
+    gap: 3px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 0 10px 10px 0;
+    box-shadow: -6px 2px 5px #0000003a;
+    transition: all 3s;
+}
+label {
+    color: #a1a1a1;
+    margin-bottom: -20px;
+    margin-left: 8px;
+    font-size: 0.95em;
+}
+
+input#email, input#senha , #botao {
+    background-color: transparent;
+    color: #a1a1a1;
+    width: 190px;
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #d3d3d309;
+    border-radius: 1px;
+}
+
+input#email:focus, input#senha:focus , #botao:focus {
+    animation-name: cor;
+    animation-duration: 4s;
+    animation-delay: .1s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#botao {
+    color: #a1a1a1;
+    cursor: pointer;
+}
