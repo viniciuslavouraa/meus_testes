@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#meu-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 0.5s ease;
+  }
+  
+  
+  
