@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    z-index: 9;
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 20px auto;
+}
+div.gallery-wrapper {
+    overflow: auto;
+    
+}
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+div.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+div.btns {
+    display: flex;
+    justify-content: space-between;
+}
+.prev , .next {
+    position: relative;
+    background-color: transparent;
+    color: #3b3b3b;
+    font-size: 25px;
+    top: 0px;
+    border: 0;
+    cursor: pointer;
+}
+
+div img.items {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 1;
+}
+
+.current-item {
+    box-shadow: 3px 3px 3px #00000075;
+}
+.current-item:hover {
+
+}
