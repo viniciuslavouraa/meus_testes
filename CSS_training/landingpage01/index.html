@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telasp.css">
+</head>
+<body>
+    <header>
+        <!--Blocos da logo principal-->
+        <span class="logo" id="bloco-logo1">
+            <div style="font-size: 5px;">🔴</div>
+            <span style="font-size: 5px;">🔴 🔴</span>
+        </span>
+        <span id="no-background">
+            <h1>OK</h1>
+        </span>
+        <span class="logo" id="bloco-logo2">
+            <p>
+                oskar 
+            </p>
+            <p>kadera</p>
+        </span>
+        <!--Navegação telas maiores-->
+        <div class="navegation-container">
+            <nav class="navegation" id="nav-principal">
+                <a href="#">Works</a>
+                <a href="#">About</a>
+                <a href="#">Awards</a>
+            </nav>
+            <!--Navegação telas menores-->
+            <nav id="nav-cell">
+               <button type="button" id="btn">☰</button>
+                <div id="content-menu" hidden>
+                    <a href="#">Works</a>
+                    <a href="#">About</a>
+                    <a href="#">Awards</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <!--Primeira section de apresentação-->
+    <section id="apresentaçao">
+        <div id="oskar-container">
+            <img src="images/oskar-kadera-img.png" alt="">
+            <div id="learn-more">
+                <span id="yellow-block"></span>
+                <span id="trans-block"><p>▷</p></span>
+                <span id="white-block"><p>Learn more</p></span>
+            </div>
+        </div>
+        <div id="img-container">
+            <img src="images/section-img.png" alt="" width="475" height="500px">
+        </div>
+    </section>
+    <!--section onde é apresentado os trabalhos-->
+    <section id="my-work">
+        <!--Character design-->
+        <div class="content" id="design">
+            <div class="works" id="titulo-design">
+                <p>01</p>
+                <p>character design</p>
+            </div>
+            <div class="img-box">
+                <img src="images/caracter-design.png" alt="" width="191px" height="151px">
+            </div>
+            <div class="legenda">
+                <h2>Swesco Maskot</h2>
+                <p style="font-size: .79em; ">Odio tempor dapibus ultrices iaculise <br> masa sapien scelerisque molestie</p>
+            </div>
+            <div class="show" style="margin-top: 25px;">
+                <button class="btn-show" id="btn1">▷</button>
+            </div>
+        </div>
+        <!--Branding-->
+        <div class="content" id="branding">
+            <div class="works" id="titulo-branding">
+                <p>02</p>
+                <p>branding</p>
+            </div>
+            <div class="img-box">
+                <img src="images/branding.png" alt="" width="153px" height="151px">
+            </div>
+            <div class="legenda">
+                <h2>Best of 2023</h2>
+                <div id="modelos">
+                    <span class="modelos-box">2d</span>
+                    <span class="modelos-box">logodypes</span>
+                    <span class="modelos-box">flat</span>
+                </div>
+            </div>
+            <div class="show">
+                <button class="btn-show" id="btn2">▷</button>
+            </div>
+        </div>
+        <!--indentity-->
+        <div class="content" id="identidade">
+            <div class="works" id="titulo-identidade">
+                <p>03</p>
+                <p>indentity</p>
+            </div>
+            <div class="img-box">
+                <img src="images/indentity.png" alt="" width="153px" height="151px">
+            </div>
+            <div class="legenda">
+                <h2>Cusco Barista</h2>
+                <div id="modelos">
+                    <span class="modelos-box">ilustration</span>
+                    <span class="modelos-box">print</span>
+                </div>
+            </div>
+            <div class="show">
+                <button class="btn-show" id="btn3">▷</button>
+            </div>
+        </div>
+    </section>
+    <script src="menu.js"></script>
+</body>
+</html>
