@@ -115,6 +115,8 @@ nav#redes-sociais {
 section#apresentaçao {
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 /*Configuração do oskar container*/
 div#oskar-container {
