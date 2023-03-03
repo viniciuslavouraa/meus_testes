@@ -21,28 +21,28 @@ btn1.addEventListener('click',mudar), btn2.addEventListener('click',mudar2), btn
 
 function mudar() {
     let content = document.querySelectorAll('.content')[0];
-    if (content.style.top == '0' || content.style.top == '') {
-        content.style.top = '-100px';
+    if (content.style.top == '0px' || content.style.top == '') {
+        content.style.top = '-100px'
     } else {
-        content.style.top = '0';
+        content.style.top = '0px'
     }
 }
 
 function mudar2() {
      let content = document.querySelectorAll('.content')[1]
-     if (content.style.top == '0' || content.style.top == '') {
+     if (content.style.top == '0px' || content.style.top == '') {
         content.style.top = '-100px'
      } else {
-        content.style  = 0
+        content.style  = '0px'
      }
 }
 
 function mudar3() {
     let content = document.querySelectorAll('.content')[2]
-    if (content.style.to == '0' || content.style.top == '') {
-        content.style.top = '-100px'
+    if (content.style.top == '0px' || content.style.top == '') {
+       content.style.top = '-100px'
     } else {
-        content.style.top = '0'
+       content.style  = '0px'
     }
 }
 
