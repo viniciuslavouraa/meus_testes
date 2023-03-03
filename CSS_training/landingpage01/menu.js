@@ -13,39 +13,46 @@ btn.addEventListener('click', function() {
     }
 })
 
+function mudarContent(index) {
+    let content = document.querySelectorAll('.content')[index]
+    if (content.style.top == '0px' || content.style.top == '') {
+        content.style.top = '-100px'
+        content.style.boxShadow = '4px 8px 3px #00000070'
+    } else {
+        content.style.top = '0px'
+        content.style.boxShadow = '2px 3px 3px #00000070'
+    }
+}
 let btn1 = document.querySelector('#btn1')
 let btn2 = document.querySelector('#btn2')
 let btn3 = document.querySelector('#btn3')
+btn1.addEventListener('click', function() {mudarContent(0)})
+btn2.addEventListener('click', function() {mudarContent(1)})
+btn3.addEventListener('click', function() {mudarContent(2)})
 
-btn1.addEventListener('click',mudar), btn2.addEventListener('click',mudar2), btn3.addEventListener('click',mudar3)
+let talk = document.querySelector('#talk')
+let interview = document.querySelector('#inter')
+let exib = document.querySelector('exib')
+talk.addEventListener('click',showTalk)
+interview.addEventListener ('click', interV)
+let paises = document.querySelector('#paises')
 
-function mudar() {
-    let content = document.querySelectorAll('.content')[0];
-    if (content.style.top == '0px' || content.style.top == '') {
-        content.style.top = '-100px'
+function showTalk() {
+    if (paises.style.visibility == 'hidden') {
+        paises.style.visibility = 'visible' 
+        talk.style.backgroundColor = 'white'
+        talk.style.color = '#f5523c'
+        interview.style.backgroundColor = ''
+        interview.style.color = ''
     } else {
-        content.style.top = '0px'
+        paises.style.visibility = 'hidden'
+        talk.style.backgroundColor = ''
+        talk.style.color = ''
     }
 }
-
-function mudar2() {
-     let content = document.querySelectorAll('.content')[1]
-     if (content.style.top == '0px' || content.style.top == '') {
-        content.style.top = '-100px'
-     } else {
-        content.style  = '0px'
-     }
+function interV() {
+    interview.style.backgroundColor = 'white'
+    interview.style.color = '#f5523c'
+    talk.style.backgroundColor = ''
+    talk.style.color = ''
 }
-
-function mudar3() {
-    let content = document.querySelectorAll('.content')[2]
-    if (content.style.top == '0px' || content.style.top == '') {
-       content.style.top = '-100px'
-    } else {
-       content.style  = '0px'
-    }
-}
-
-
-
-
