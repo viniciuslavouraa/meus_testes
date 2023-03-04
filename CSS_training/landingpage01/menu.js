@@ -56,3 +56,45 @@ function interV() {
     talk.style.backgroundColor = ''
     talk.style.color = ''
 }
+// Código para o carrosel
+let leftBtn = document.querySelector('.left')
+let rightBtn = document.querySelector('.right')
+let awards = document.querySelectorAll('.awards')
+
+//Defube um índice para controlar qual prêmio está sendo exibdo
+let currentAwardIndex = 0
+//Função para exibir o prêmio atual
+function showCurrentAward() {
+        awards.forEach(award => {
+            award.style.display = 'block';
+            award.style.border = 'none';
+            award.style.boxShadow = 'none'
+            award.style.padding = '0';
+            award.style.borderRadius = '0';
+            award.style.top = ''
+        });
+        
+        // Adiciona os estilos ao prêmio atual
+        awards[currentAwardIndex].style.display = 'block';
+        awards[currentAwardIndex].style.border = '2px solid white';
+        awards[currentAwardIndex].style.boxShadow = '2px 4px 3px #00000070'
+        awards[currentAwardIndex].style.padding = '15px';
+        awards[currentAwardIndex].style.borderRadius = '8px';
+        awards[currentAwardIndex].style.transition = '500ms'
+    }
+
+//Adiciona um listner de clique ao botão da esquerda
+leftBtn.addEventListener('click',() => {
+    //retrocede para o prêmio anterios, mas volta para o final se chegar no inicio
+    currentAwardIndex = (currentAwardIndex == 0) ? awards.length -1 : currentAwardIndex -1
+    showCurrentAward()
+})
+
+//Adiciona um listner de clique ao botão da direita
+rightBtn.addEventListener('click', () => {
+    //Avança para o proxmio prêmio, mas volta para o ínicio se chegar no final
+    currentAwardIndex = (currentAwardIndex == awards.length - 1)  ? 0 : currentAwardIndex + 1
+    showCurrentAward()
+})
+
+showCurrentAward()

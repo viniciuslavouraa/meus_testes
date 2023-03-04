@@ -179,21 +179,34 @@ div.show {
 }
 /* configurações 2023 best*/
 section#best {
-    display: flex;
-    flex-direction: column;
+    display: none;
     justify-content: center;
     gap: 20px;
 }
-div#logo {
-    width: 290px;
-}
-#img-branding-2 {
-    z-index: 0;
-    border: 4px solid var(--white-color);
-    border-radius: 8px;
-    width: 290px;
-}
 #img-branding-2 img {
+    display: none;
     width: 290px;
+}
+/* Configuração carrosel*/
+section#personal-award {
+    display: flex;
+    background-color: var(--red-color2);
+    padding: 20px;
+    border-radius: 15px 0 0 15px ;
+    justify-content: left;
+}
+div.carrosel-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 20px;
+}
+/* configuração redes sociais*/
+div#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    align-items: center;
+    gap: 60px;
 }
 }
