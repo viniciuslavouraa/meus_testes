@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+sup {
+    color: red;
+}
+.cadastro {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    margin-top: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#endereço-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nome-box, #bairro-box, #cidade-box, #estado-box {
+    display: flex;
+    flex-direction: column;
+}
+#rua-box, #num-box {
+    display: flex;
+    flex-direction: column;
+}
+
+

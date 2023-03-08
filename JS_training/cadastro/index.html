@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="cadastro">
+        <div id="endereço-box">
+            <div id="nome-box">
+                <label for="name">Nome Completo <sup>*</sup></label>
+                <input type="text" name="name" id="name" autocomplete="off">
+            </div>
+                <div id="rua-box">
+                    <label for="endereço">Endereço <sup>*</sup></label>
+                    <input type="text" name="endereço" id="endereço">
+                </div>
+                    <div id="num-box">
+                        <label for="numero">Nº <sup>*</sup></label>
+                        <input type="number" name="numero" id="numero" min="2" max="5" size="5" >
+                    </div>
+            <div id="bairro-box">
+                <label for="bairro">Bairro <sup>*</sup></label>
+                <input type="text" name="bairro" id="bairro">
+            </div>
+            <div id="cidade-box">
+                <label for="cidade">Cidade <sup>*</sup></label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+            <div id="estado-box">
+                <label for="estado">Estado <sup>*</sup></label>
+                <input type="text" name="estado" id="estado" autocomplete="off">
+            </div>
+            <div class="btns-register">
+                <button type="button" id="register">Cadastrar</button>
+            </div>
+        </div>
+    </section>
+    <section class="info" hidden>
+        <div id="res">
+
+        </div>
+        <div class="btn-alt">
+            <button type="button" id="btn-alterar">Alterar</button>
+        </div>
+    </section>
+    <script src="cadastro.js"></script>
+</body>
+</html>
